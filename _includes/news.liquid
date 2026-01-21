@@ -1,34 +1,90 @@
+<style>
+  .awards-list {
+    list-style: none;
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+
+  .award-item {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+    /* 修改颜色：原本是 #3498db (蓝)，改为 #c9302c (深红) */
+    border-left: 2px solid #c9302c; 
+    position: relative;
+  }
+
+  /* 那个圆点 */
+  .award-item::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    /* 修改颜色：圆点背景也变成深红 */
+    background-color: #c9302c;
+    border-radius: 50%;
+    position: absolute;
+    left: -7px;
+    top: 0.2rem;
+    border: 2px solid #fff;
+  }
+
+  .award-item-title {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 1.05rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .award-item-date {
+    color: #7f8c8d;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+  }
+
+  .award-item-content {
+    color: #444;
+    line-height: 1.6;
+    font-size: 0.95rem;
+  }
+  
+  .award-item-content p {
+    margin: 0; 
+  }
+</style>
+
 <div class="news">
   {% if site.news != blank %}
-    {% assign news_size = site.news | size %}
-    <div
-      class="table-responsive"
-      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
+    
+    <div class="awards-list">
+      {% assign news = site.news | reverse %}
+      {% if include.limit and page.announcements.limit %}
+        {% assign news_limit = page.announcements.limit %}
+      {% else %}
+        {% assign news_limit = news_size %}
       {% endif %}
-    >
-      <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and page.announcements.limit %}
-          {% assign news_limit = page.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
-        {% endif %}
-        {% for item in news limit: news_limit %}
-          <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </table>
+
+      {% for item in news limit: news_limit %}
+        <div class="award-item">
+          {% unless item.inline %}
+            <div class="award-item-title">
+              <a href="{{ item.url | relative_url }}" style="color: inherit; text-decoration: none;">{{ item.title }}</a>
+            </div>
+          {% endunless %}
+
+          <div class="award-item-date">{{ item.date | date: "%b %d, %Y" }}</div>
+
+          <div class="award-item-content">
+            {% if item.inline %}
+              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {% else %}
+              {{ item.description }}
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
     </div>
-  {% else %}
+
+    {% else %}
     <p>No news so far...</p>
   {% endif %}
 </div>
