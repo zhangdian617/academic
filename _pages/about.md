@@ -114,7 +114,7 @@ latest_posts:
     
     <!-- 左侧头像 (占 3/12 宽度) -->
     <div class="col-sm-3 text-center">
-        <img src="{{ '/assets/img/test2.png' | relative_url }}" class="img-fluid rounded" style="max-width: 100%; border: 1px solid #ddd; padding: 3px;" alt="Profile Picture">
+        <img src="{{ '/assets/img/zhangdian.png' | relative_url }}" class="img-fluid rounded" style="max-width: 100%; border: 1px solid #ddd; padding: 3px;" alt="Profile Picture">
     </div>
 
     <!-- 右侧信息 (占 9/12 宽度) -->
