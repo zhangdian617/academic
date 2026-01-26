@@ -62,7 +62,7 @@ def get_scholar_citations() -> None:
 
     citation_data = {"metadata": {"last_updated": today}, "papers": {}}
 
-    scholarly.set_timeout(15)
+    scholarly.set_timeout(120)
     scholarly.set_retries(3)
     try:
         author = scholarly.search_author_id(SCHOLAR_USER_ID)
