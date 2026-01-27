@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: HOME
 permalink: /
 subtitle: 
 
@@ -27,24 +27,23 @@ latest_posts:
         display: none !important;
     }
 
-    
     /* (A) 把整个网页背景变成浅灰色 */
     body {
-        background-color: #f4f6f8 !important; /* 一种高级的浅灰 */
+        background-color: #f4f6f8 !important; 
     }
 
     /* (B) 把内容容器变成“白纸” */
     body > .container {
-        background-color: #ffffff !important; /* 纯白背景 */
-        max-width: 1150px !important; /* 限制最大宽度，模仿邹老师的窄版设计 */
+        background-color: #ffffff !important; 
+        max-width: 1150px !important; 
         
         /* 制造立体感的阴影 */
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); 
         
-        /* 内部留白，文字不贴边 */
+        /* 内部留白 */
         padding: 40px 60px !important; 
         
-        /* 外部留白，让它浮在中间 */
+        /* 外部留白 */
         margin-top: 30px;
         margin-bottom: 60px;
         
@@ -63,7 +62,7 @@ latest_posts:
         margin-bottom: 20px;
         border-bottom: 1px solid #eee;
         padding-bottom: 8px;
-        letter-spacing: 0.5px; /* 字间距稍微宽一点 */
+        letter-spacing: 0.5px; 
     }
 
     /* 研究领域样式 */
@@ -82,7 +81,7 @@ latest_posts:
         font-size: 0.9rem;
     }
 
-    /* --- 4. 个人信息文字优化 --- */
+    /* --- 个人信息文字优化 --- */
     .info-text p {
         margin-bottom: 6px;
         font-size: 0.95rem;
@@ -95,33 +94,52 @@ latest_posts:
         text-decoration: underline;
     }
 
-    /* --- 5. 手机端适配 (手机屏幕窄，去掉两侧留白) --- */
+    /* --- 手机端适配 --- */
     @media (max-width: 768px) {
         body > .container {
             width: 100% !important;
             max-width: 100% !important;
             margin: 0 !important;
             padding: 20px !important;
-            box-shadow: none !important; /* 手机上去掉阴影，铺满屏幕 */
-            border-top: none; /* 手机上也许可以去掉红条 */
+            box-shadow: none !important; 
+            border-top: none; 
+        }
+        /* 手机上 Logo 居中 */
+        .university-logo {
+            float: none !important;
+            display: block;
+            margin: 0 auto 20px auto;
+            max-width: 200px !important;
         }
     }
 </style>
 
 <!-- 2. 核心布局：头像 + 个人信息 -->
-<!-- 这里开始 -->
 <div class="row mb-5">
     
     <!-- 左侧头像 (占 3/12 宽度) -->
     <div class="col-sm-3 text-center">
-        <img src="{{ '/assets/img/test2.png' | relative_url }}" class="img-fluid rounded" style="max-width: 100%; border: 1px solid #ddd; padding: 3px;" alt="Profile Picture">
+        <!-- 【修改点 1】头像样式优化 -->
+        <!-- 改动：使用了 rounded-circle 强制变圆，去掉了 border 边框，加了 box-shadow 阴影 -->
+        <img src="{{ '/assets/img/zhangdian.png' | relative_url }}" 
+             class="img-fluid rounded-circle" 
+             style="max-width: 100%; width: 220px; height: 220px; object-fit: cover; box-shadow: 0 5px 15px rgba(0,0,0,0.15);" 
+             alt="Profile Picture">
     </div>
 
     <!-- 右侧信息 (占 9/12 宽度) -->
     <div class="col-sm-9 info-text">
+        
+        <!-- 【修改点 2】Logo 放大 -->
+        <!-- 改动：max-width 从 180px 改为 280px，更显眼 -->
+        <img src="{{ '/assets/img/LU_StdSignature_FullColour-01.jpg' | relative_url }}" 
+             class="university-logo" 
+             alt="Lingnan University Logo" 
+             style="float: right; max-width: 280px; height: auto; margin-left: 20px; margin-bottom: 10px;">
+
         <!-- 名字与职称 -->
         <h2 style="margin-top: 0; font-weight: bold; color: #333; font-family: 'Times New Roman', serif;">
-            Dian Zhang
+            Dian Zhang（张滇）
         </h2>
         <p style="color: #111; margin-bottom: 10px; font-weight: 500;">
             <b>Associate Professor, Ph.D supervisor</b>
@@ -130,7 +148,7 @@ latest_posts:
             Person-in-Charge, <a href="https://www.ln.edu.hk/sds/dids" target="_blank">Division of Industrial Data Science</a>
         </p>
         <p style="color: #555; margin-bottom: 10px; font-weight: 500;">
-            Associate Dean, <a href="https://www.ln.edu.hk/sds" target="_blank">Sochool of Data Science</a>, <a href="https://www.ln.edu.hk" target="_blank">Lingnan University</a>
+            Associate Dean, <a href="https://www.ln.edu.hk/sds" target="_blank">School of Data Science</a>, <a href="https://www.ln.edu.hk" target="_blank">Lingnan University</a>
         </p>
         
         <!-- 核心信息区域 -->
@@ -161,8 +179,8 @@ latest_posts:
                 [<a href="https://github.com/zhangdian617" target="_blank">GitHub</a>]
                 [<a href="#" target="_blank">中文主页</a>]
             </div>
-        </div> <!-- 关闭 核心信息区域 div -->
-    </div> <!-- 关闭 右侧信息 col-sm-9 -->
+        </div> 
+    </div> 
 
 </div>
 
@@ -207,3 +225,6 @@ latest_posts:
 <div class="header">News</div>
 
 <!-- 这里会自动加载 _news 文件夹里的内容 -->
+
+<!-- selected publications -->
+

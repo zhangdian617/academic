@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /news/
-title: news          # 这个必须留着给系统识别，但我们在下面手动隐藏它
+title: NEWS          # 这个必须留着给系统识别，但我们在下面手动隐藏它
 description: 
 nav: true
 nav_order: 5

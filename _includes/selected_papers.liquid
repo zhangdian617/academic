@@ -1,3 +1,11 @@
 <div class="publications">
+  <!-- 使用和你 About 页面一样的 .header 样式，保证风格统一 -->
+  <div class="header" style="display: flex; justify-content: space-between; align-items: baseline;">
+      Selected Publications
+      <!-- 右侧的跳转小链接 -->
+      <a href="{{ '/publications/' | relative_url }}" style="font-size: 0.8rem; font-weight: normal; color: #0056b3; text-decoration: none;">
+          (View Full List)
+      </a>
+  </div>
   {% bibliography --group_by none --query @*[selected=true]* %}
 </div>

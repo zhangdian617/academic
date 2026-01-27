@@ -24,3 +24,13 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-filled.scss",
   "tabler-icons/tabler-icons-outline.scss"
 ;
+
+/* --- 1. 导航栏居中  --- */
+
+#navbar .navbar-nav {
+    margin: 0 auto !important;   
+    float: none !important;      
+    flex-direction: row;         
+    display: flex;
+    justify-content: center;     
+}
