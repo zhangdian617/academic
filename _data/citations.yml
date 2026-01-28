@@ -1,358 +1,259 @@
 metadata:
-  last_updated: '2026-01-27'
-
+  last_updated: '2026-01-28'
 papers:
-  # 1. Computational analysis 
-  tiE0IDMAAAAJ:-ghEM2AJqZyQC:
-    citations: 7
-    title: A computational analysis of aspect-based sentiment analysis research through bibliometric mapping and topic modeling
-    year: 2025
-
-  # 2. RF-Based Tracking (PerCom 07)
-  tiE0IDMAAAAJ:-u5HHmVD_uO8C:
-    citations: 361
-    title: An RF-Based System for Tracking Transceiver-Free Objects
-    year: 2007
-
-  # 3. RFID-based localization (IEEE Wireless Com 11)
-  tiE0IDMAAAAJ:-u-x6o8ySG0sC:
-    citations: 341
-    title: RFID-based localization and tracking technologies
-    year: 2011
-
-  # 4. RASS (TPDS 13)
-  tiE0IDMAAAAJ:-9yKSN-GCB0IC:
-    citations: 204
-    title: "RASS: A Real-Time, Accurate, and Scalable System for Tracking Transceiver-Free Objects"
-    year: 2012
-
-  # 5. Dynamic clustering (PerCom 09)
-  tiE0IDMAAAAJ:-d1gkVwhDpl0C:
-    citations: 142
-    title: Dynamic clustering for tracking multiple transceiver-free objects
-    year: 2009
-
-  # 6. Bitcoin price forecasting (DSS 21)
-  tiE0IDMAAAAJ:-Xz60mAmATU4C:
-    citations: 108
-    title: "Bitcoin price forecasting: A perspective of underlying blockchain transactions"
-    year: 2021
-
-  # 7. Fine-Grained Localization (TPDS 14)
-  tiE0IDMAAAAJ:-WF5omc3nYNoC:
-    citations: 94
-    title: Fine-Grained Localization for Multiple Transceiver-Free Objects by using RF-Based Technologies
-    year: 2013
-
-  # 8. Multiple radio paths (INFOCOM 12)
-  tiE0IDMAAAAJ:-UeHWp8X0CEIC:
-    citations: 67
-    title: On distinguishing the multiple radio paths in RSS-based ranging
-    year: 2012
-
-  # 9. COCKTAIL (ICC 10)
-  tiE0IDMAAAAJ:-2osOgNQ5qMEC:
-    citations: 55
-    title: "COCKTAIL: An RF-Based Hybrid Approach for Indoor Localization"
-    year: 2010
-
-  # 10. Smart Glove (IoTJ 20)
-  tiE0IDMAAAAJ:-silx2ntsSuwC:
-    citations: 49
-    title: A Low-Cost Smart Glove System for Real-Time Fitness Coaching
-    year: 2020
-
-  # 11. Gesture Recognition IMU (TMC 23)
-  tiE0IDMAAAAJ:-UuEBAcK4md4C:
-    citations: 47
-    title: Fine-Grained and Real-Time Gesture Recognition by Using IMU Sensors
-    year: 2021
-
-  # 12. Precise RFID localization (China Com 15)
-  tiE0IDMAAAAJ:-0EnyYjriUFMC:
-    citations: 45
-    title: A precise RFID indoor localization system with sensor network assistance
-    year: 2015
-
-  # 13. Localization algorithm (IJDSN 11)
-  tiE0IDMAAAAJ:-Tyk-4Ss8FVUC:
-    citations: 44
-    title: Localization algorithm based on maximum a posteriori in wireless sensor networks
-    year: 2011
-
-  # 14. SmartRolling (IPM 23)
-  tiE0IDMAAAAJ:-g5Ck-dwhA_QC:
-    citations: 43
-    title: "SmartRolling: A human–machine interface for wheelchair control using EEG and smart sensing techniques"
-    year: 2023
-
-  # 15. MODLoc (TPDS 14)
-  tiE0IDMAAAAJ:-LkGwnXOMwfcC:
-    citations: 41
-    title: "MODLoc: Localizing Multiple Objects in Dynamic Indoor Environment"
-    year: 2013
-
-  # 16. MOCUS (IJSNet 08)
-  tiE0IDMAAAAJ:-IjCSPb-OGe4C:
-    citations: 33
-    title: "MOCUS: moving object counting using ultrasonic sensor networks"
-    year: 2008
-
-  # 17. Driver Profiling (Big Data 18)
-  tiE0IDMAAAAJ:-IsPWOBWtZBwC:
-    citations: 32
-    title: Profiling Driver Behavior for Personalized Insurance Pricing and Maximal Profit
-    year: 2018
-
-  # 18. Smart Diagnosis (IoTJ 22)
-  tiE0IDMAAAAJ:-DyXnQzXoVgIC:
-    citations: 29
-    title: "Smart Diagnosis: Deep Learning Boosted Driver Inattention Detection and Abnormal Driving Prediction"
-    year: 2021
-
-  # 19. Empirical study radio signal (Tech Report 06)
-  tiE0IDMAAAAJ:-qjMakFHDy7sC:
-    citations: 29
-    title: An empirical study of radio signal strength in sensor networks using mica2 nodes
-    year: 2006
-
-  # 20. Link-Centric Coverage (ICDCS 10)
-  tiE0IDMAAAAJ:-Y0pCki6q_DkC:
-    citations: 27
-    title: Link-Centric Probabilistic Coverage Model for Transceiver-Free Object Detection in Wireless Networks
-    year: 2010
-
-  # 21. Financial sentiment analysis (WWW 22)
-  tiE0IDMAAAAJ:-8Xgff_V0N9gC:
-    citations: 25
-    title: Leveraging statistical information in fine-grained financial sentiment analysis
-    year: 2022
-
-  # 22. Enhance RSS (WCMC 18)
-  tiE0IDMAAAAJ:-JTqpx9DYBaYC:
-    citations: 24
-    title: Enhance RSS-Based Indoor Localization Accuracy by Leveraging Environmental Physical Features
-    year: 2018
-
-  # 23. ASTCN (IoTJ 22)
-  tiE0IDMAAAAJ:-UmS_249rOGwC:
-    citations: 22
-    title: "ASTCN: An Attentive Spatial–Temporal Convolutional Network for Flow Prediction"
-    year: 2021
-
-  # 24. K-Hop Clustering (Springer 07)
-  tiE0IDMAAAAJ:-zYLM7Y9cAGgC:
-    citations: 22
-    title: An Energy-Efficient K-Hop Clustering Framework for Wireless Sensor Networks
-    year: 2007
-
-  # 25. IoT risk assessments (POM 22)
-  tiE0IDMAAAAJ:-SIv7DqKytYAC:
-    citations: 16
-    title: "Is it all about you or your driving? Designing IoT-enabled risk assessments"
-    year: 2022
-
-  # 26. Localizing Multiple Objects (ICDCS 12)
-  tiE0IDMAAAAJ:-eQOLeE2rZwMC:
-    citations: 15
-    title: Localizing Multiple Objects in an RF-based Dynamic Environment
-    year: 2012
-
-  # 27. MoCha (KDD 21)
-  tiE0IDMAAAAJ:-CYCckWUYoCcC:
-    citations: 14
-    title: "MoCha: Large-Scale Driving Pattern Characterization for Usage-based Insurance"
-    year: 2021
-
-  # 28. RCSMA (TPDS 12)
-  tiE0IDMAAAAJ:-YsMSGLbcyi4C:
-    citations: 13
-    title: "RCSMA: Receiver-Based Carrier Sense Multiple Access in UHF RFID Systems"
-    year: 2011
-
-  # 29. RSS Frequency Diversity (TMC 17)
-  tiE0IDMAAAAJ:-nRpfm8aw39MC:
-    citations: 12
-    title: RSS-Based Ranging by Leveraging Frequency Diversity to Distinguish the Multiple Radio Paths
-    year: 2016
-
-  # 30. Empirical study radio signal (Duplicate title, diff ID)
-  tiE0IDMAAAAJ:-jSAVyFp_754C:
-    citations: 12
-    title: An empirical study of radio signal strength in sensor networks
-    year: 2006
-
-  # 31. Literature screening (IJMLC 23)
-  tiE0IDMAAAAJ:-2v_ZtQDX9iAC:
-    citations: 11
-    title: Leveraging deep learning for automatic literature screening in intelligent bibliometrics
-    year: 2023
-
-  # 32. Beyond RSS (TMC 22)
-  tiE0IDMAAAAJ:-sA9dB-pw3HoC:
-    citations: 10
-    title: "Beyond RSS: A PRR and SNR Aided Localization System for Transceiver-Free Target in Sparse Wireless Networks"
-    year: 2021
-
-  # 33. Metric-Space Indexes (DASFAA 14)
-  tiE0IDMAAAAJ:-roLk4NBRz8UC:
-    citations: 8
-    title: On Data Partitioning in Tree Structure Metric-Space Indexes
-    year: 2014
-
-  # 34. Taxi Speeding (Web Big Data 18)
-  tiE0IDMAAAAJ:-PkcyUWeTMh0C:
-    citations: 7
-    title: Detecting Taxi Speeding from Sparse and Low-Sampled Trajectory Data
-    year: 2018
-
-  # 35. TAPoseNet (MICCAI 24)
-  tiE0IDMAAAAJ:-kJDgFkosVoMC:
-    citations: 6
-    title: "TAPoseNet: Teeth Alignment Based on Pose Estimation via Multi-scale Graph Convolutional Network"
-    year: 2024
-
-  # 36. PBE Driver Assessment (MLKDD 19)
-  tiE0IDMAAAAJ:-rbm3iO8VlycC:
-    citations: 6
-    title: "PBE: Driver Behavior Assessment Beyond Trajectory Profiling"
-    year: 2018
-
-  # 37. HandButton (ICC 15)
-  tiE0IDMAAAAJ:-mVmsd5A6BfQC:
-    citations: 6
-    title: "HandButton: Gesture recognition of transceiver-free object by using wireless networks"
-    year: 2015
-
-  # 38. MG-ASTN (IoTJ 23)
-  tiE0IDMAAAAJ:-hSRAE-fF4OAC:
-    citations: 4
-    title: "MG-ASTN: Multigraph Framework With Attentive Spatial–Temporal Networks for Crowd Mobility Prediction"
-    year: 2023
-
-  # 39. Oral leukoplakia AI (npj Digital Med 25)
-  tiE0IDMAAAAJ:-2ywjKiB__4kC:
-    citations: 3
-    title: Next-generation AI framework for comprehensive oral leukoplakia evaluation and management
-    year: 2025
-
-  # 40. ST-RLNet (Neurocomputing 25)
-  tiE0IDMAAAAJ:-0aBXIfxlw9sC:
-    citations: 3
-    title: "ST-RLNet: Spatio-temporal representation learning for multi-step traffic flow prediction"
-    year: 2025
-
-  # 41. scDTL (Briefings Bioinf 24)
-  tiE0IDMAAAAJ:-fMHVdjMkC:
-    citations: 3
-    title: "scDTL: enhancing single-cell RNA-seq imputation through deep transfer learning with bulk cell information"
-    year: 2024
-
-  # 42. InFit (TMC 23)
   tiE0IDMAAAAJ:-DxkuPiZhfEC:
     citations: 3
-    title: "InFit: Combination Movement Recognition for Intensive Fitness Assistant via Wi-Fi"
-    year: 2022
-
-  # 43. Precise transceiver-free (China Com 16)
-  tiE0IDMAAAAJ:-7BrZ7Jt4UNcC:
+    title: 'InFit: Combination movement recognition for intensive fitness assistant via Wi-Fi'
+    year: '2022'
+  tiE0IDMAAAAJ:0EnyYjriUFMC:
+    citations: 45
+    title: A precise RFID indoor localization system with sensor network assistance
+    year: '2015'
+  tiE0IDMAAAAJ:0aBXIfxlw9sC:
     citations: 3
-    title: Precise transceiver-free localization in complex indoor environment
-    year: 2016
-
-  # 44. Double Free (ICPP 14)
-  tiE0IDMAAAAJ:-hqOjcs7Dif8C:
+    title: 'ST-RLNet: Spatio-temporal representation learning for multi-step traffic flow prediction'
+    year: '2025'
+  tiE0IDMAAAAJ:1tZ8xJnm2c8C:
+    citations: 0
+    title: 'Enhancing malignant transformation predictions in oral potentially malignant disorders: A novel machine learning framework using real-world data'
+    year: '2025'
+  tiE0IDMAAAAJ:27LrP4qxOz0C:
+    citations: 2
+    title: 'MeshID: Few-Shot Finger Gesture Based User Identification Using Orthogonal Signal Interference'
+    year: '2024'
+  tiE0IDMAAAAJ:2osOgNQ5qMEC:
+    citations: 55
+    title: 'COCKTAIL: An RF-based hybrid approach for indoor localization'
+    year: '2010'
+  tiE0IDMAAAAJ:2v_ZtQDX9iAC:
+    citations: 11
+    title: Leveraging deep learning for automatic literature screening in intelligent bibliometrics
+    year: '2023'
+  tiE0IDMAAAAJ:2ywjKiB__4kC:
     citations: 3
-    title: "Double Free: Measurement-Free Localization for Transceiver-Free Object"
-    year: 2014
-
-  # 45. Shift Coding (ICPPW 07)
-  tiE0IDMAAAAJ:-_FxGoFyzp5QC:
-    citations: 3
-    title: "Shift Coding: Efficient State Update in Mobile Peer-to-Peer Multiplayer Games"
-    year: 2007
-
-  # 46. Acupuncture Analgesic (J. Pain Research 25)
-  tiE0IDMAAAAJ:-eGYfIraVYiQC:
-    citations: 2
-    title: "Investigating the Analgesic Mechanisms of Acupuncture for Cancer Pain: Insights From Multimodal Bioelectrical Signal Analysis"
-    year: 2025
-
-  # 47. MeshID (Sensors 24)
-  tiE0IDMAAAAJ:-27LrP4qxOz0C:
-    citations: 2
-    title: "MeshID: Few-Shot Finger Gesture Based User Identification Using Orthogonal Signal Interference"
-    year: 2024
-
-  # 48. FGRL-Net (SMC 23)
-  tiE0IDMAAAAJ:-v6i8RKmR8ToC:
-    citations: 2
-    title: "FGRL-Net: Fine-Grained Personalized Patient Representation Learning for Clinical Risk Prediction Based on EHRs"
-    year: 2023
-
-  # 49. Versatile Nodal Energy (ICPADS 11)
-  tiE0IDMAAAAJ:-ufrVoPGSRksC:
-    citations: 2
-    title: A Versatile Nodal Energy Consumption Monitoring Method for Wireless Sensor Network Testbed
-    year: 2011
-
-  # 50. Beyond RSS PRR (GLOBECOM 18)
-  tiE0IDMAAAAJ:-zGdJYJv2LkUC:
-    citations: 1
-    title: "Beyond RSS: A PRR Aided RSS System to Localize Transceiver-Free Target in Sparse Wireless Networks"
-    year: 2018
-
-  # 51. Inverse consistent image transformation (CMIG 15)
-  tiE0IDMAAAAJ:-48xauSegjOkC:
+    title: Next-generation AI framework for comprehensive oral leukoplakia evaluation and management
+    year: '2025'
+  tiE0IDMAAAAJ:48xauSegjOkC:
     citations: 1
     title: A fast algorithm to estimate inverse consistent image transformation based on corresponding landmarks
-    year: 2015
-
-  # 52. Terahertz downlink (Computer Networks 25)
-  tiE0IDMAAAAJ:-RJOyoaXV5v8C:
-    citations: 
-    title: "Terahertz downlink channel estimation using AIoT systems: OMP integrated pruned deep CNN method"
-    year: 2025
-
-  # 53. Compressive sensing (Signal Proc 26)
-  tiE0IDMAAAAJ:-eAlLMO4JVmQC:
-    citations: 
-    title: "Compressive sensing based downlink channel estimation for mmWave systems using deep learning: Centralized or decentralized"
-    year: 2025
-
-  # 54. MVDC (ICASSP 25)
-  tiE0IDMAAAAJ:-isU91gLudPYC:
-    citations: 
-    title: "MVDC : A Multi-view Dental Completion Model Based on Contrastive Learning"
-    year: 2025
-
-  # 55. Enhancing malignant transformation (iScience 25)
-  # [注意] 此篇原始 BibTeX 未提供 Scholar ID，暂时使用占位符 'li2025enhancing'
-  tiE0IDMAAAAJ:-1tZ8xJnm2c8C:
-    citations: 
-    title: "Enhancing malignant transformation predictions in oral potentially malignant disorders: A novel machine learning framework using real-world data"
-    year: 2025
-
-  # 56. scDTL (bioRxiv 24)
-  tiE0IDMAAAAJ:-X9ykpCP0fEIC:
-    citations: 
-    title: "scDTL: single-cell RNA-seq imputation based on deep transfer learning using bulk cell information"
-    year: 2024
-
-  # 57. AIMSafe (MobiQuitous 24)
-  tiE0IDMAAAAJ:-zdjWy_NXXwUC:
-    citations: 
-    title: "AIMSafe: EEG-Based Driver Behavior Understanding via Attention and Incremental Learning Mechanisms"
-    year: 2024
-
-  # 58. RF-Eye (MobiQuitous 23)
-  tiE0IDMAAAAJ:-qwy9JoKyICEC:
-    citations: 
-    title: "RF-Eye: Training-Free Object Shape Detection Using Directional RF Antenna"
-    year: 2023
-  
-  # 59. Cross-Technology Localization (TIIS)
+    year: '2015'
+  tiE0IDMAAAAJ:7BrZ7Jt4UNcC:
+    citations: 3
+    title: Precise transceiver-free localization in complex indoor environment
+    year: '2016'
+  tiE0IDMAAAAJ:8Xgff_V0N9gC:
+    citations: 25
+    title: Leveraging statistical information in fine-grained financial sentiment analysis
+    year: '2022'
+  tiE0IDMAAAAJ:9ZlFYXVOiuMC:
+    citations: 0
+    title: Transceiver-free Object Tracking in Wireless Sensor Networks
+    year: '2006'
+  tiE0IDMAAAAJ:9yKSN-GCB0IC:
+    citations: 204
+    title: 'Rass: A real-time, accurate, and scalable system for tracking transceiver-free objects'
+    year: '2012'
+  tiE0IDMAAAAJ:CYCckWUYoCcC:
+    citations: 14
+    title: 'MoCha: Large-scale driving pattern characterization for usage-based insurance'
+    year: '2021'
+  tiE0IDMAAAAJ:DyXnQzXoVgIC:
+    citations: 29
+    title: 'Smart diagnosis: Deep learning boosted driver inattention detection and abnormal driving prediction'
+    year: '2021'
+  tiE0IDMAAAAJ:Hck25ST_3aIC:
+    citations: 0
+    title: Optimization of Linpack for Loongson 3B processor
+    year: '2014'
+  tiE0IDMAAAAJ:IjCSPb-OGe4C:
+    citations: 33
+    title: 'MOCUS: moving object counting using ultrasonic sensor networks'
+    year: '2008'
+  tiE0IDMAAAAJ:IsPWOBWtZBwC:
+    citations: 32
+    title: Profiling driver behavior for personalized insurance pricing and maximal profit
+    year: '2018'
+  tiE0IDMAAAAJ:JTqpx9DYBaYC:
+    citations: 24
+    title: "Enhance RSS\u2010Based Indoor Localization Accuracy by Leveraging Environmental Physical Features"
+    year: '2018'
+  tiE0IDMAAAAJ:LkGwnXOMwfcC:
+    citations: 41
+    title: 'MODLoc: Localizing multiple objects in dynamic indoor environment'
+    year: '2013'
+  tiE0IDMAAAAJ:PkcyUWeTMh0C:
+    citations: 7
+    title: Detecting taxi speeding from sparse and low-sampled trajectory data
+    year: '2018'
+  tiE0IDMAAAAJ:RJOyoaXV5v8C:
+    citations: 0
+    title: 'Terahertz downlink channel estimation using AIoT systems: OMP integrated pruned deep CNN method'
+    year: '2025'
+  tiE0IDMAAAAJ:SIv7DqKytYAC:
+    citations: 16
+    title: "Is it all about you or your driving? Designing IoT\u2010enabled risk assessments"
+    year: '2022'
+  tiE0IDMAAAAJ:Tyk-4Ss8FVUC:
+    citations: 44
+    title: Localization algorithm based on maximum a posteriori in wireless sensor networks
+    year: '2011'
+  tiE0IDMAAAAJ:UeHWp8X0CEIC:
+    citations: 67
+    title: On distinguishing the multiple radio paths in rss-based ranging
+    year: '2012'
+  tiE0IDMAAAAJ:UmS_249rOGwC:
+    citations: 22
+    title: "ASTCN: An attentive spatial\u2013temporal convolutional network for flow prediction"
+    year: '2021'
+  tiE0IDMAAAAJ:UuEBAcK4md4C:
+    citations: 47
+    title: Fine-grained and real-time gesture recognition by using IMU sensors
+    year: '2021'
+  tiE0IDMAAAAJ:WF5omc3nYNoC:
+    citations: 94
+    title: Fine-grained localization for multiple transceiver-free objects by using RF-based technologies
+    year: '2013'
+  tiE0IDMAAAAJ:Wp0gIr-vW9MC:
+    citations: 0
+    title: 'Localizing transceiver-free objects: The RF-based approaches'
+    year: '2010'
+  tiE0IDMAAAAJ:X9ykpCP0fEIC:
+    citations: 0
+    title: 'scDTL: single-cell RNA-seq imputation based on deep transfer learning using bulk cell information'
+    year: '2024'
+  tiE0IDMAAAAJ:Xz60mAmATU4C:
+    citations: 108
+    title: 'Bitcoin price forecasting: A perspective of underlying blockchain transactions'
+    year: '2021'
+  tiE0IDMAAAAJ:Y0pCki6q_DkC:
+    citations: 27
+    title: Link-centric probabilistic coverage model for transceiver-free object detection in wireless networks
+    year: '2010'
+  tiE0IDMAAAAJ:YlPif8NxrbYC:
+    citations: 0
+    title: Workshop Organizing Committees
+    year: Unknown Year
+  tiE0IDMAAAAJ:YsMSGLbcyi4C:
+    citations: 13
+    title: 'RCSMA: Receiver-based carrier sense multiple access in UHF RFID systems'
+    year: '2011'
+  tiE0IDMAAAAJ:_FxGoFyzp5QC:
+    citations: 3
+    title: 'Shift coding: efficient state update in mobile peer-to-peer multiplayer games'
+    year: '2007'
+  tiE0IDMAAAAJ:d1gkVwhDpl0C:
+    citations: 142
+    title: Dynamic clustering for tracking multiple transceiver-free objects
+    year: '2009'
+  tiE0IDMAAAAJ:eAlLMO4JVmQC:
+    citations: 0
+    title: 'Compressive sensing based downlink channel estimation for mmWave systems using deep learning: Centralized or decentralized'
+    year: '2025'
+  tiE0IDMAAAAJ:eGYfIraVYiQC:
+    citations: 2
+    title: 'Investigating the Analgesic Mechanisms of Acupuncture for Cancer Pain: Insights From Multimodal Bioelectrical Signal Analysis'
+    year: '2025'
+  tiE0IDMAAAAJ:eQOLeE2rZwMC:
+    citations: 15
+    title: Localizing multiple objects in an rf-based dynamic environment
+    year: '2012'
+  tiE0IDMAAAAJ:g5Ck-dwhA_QC:
+    citations: 43
+    title: "SmartRolling: A human\u2013machine interface for wheelchair control using EEG and smart sensing techniques"
+    year: '2023'
+  tiE0IDMAAAAJ:ghEM2AJqZyQC:
+    citations: 7
+    title: A computational analysis of aspect-based sentiment analysis research through bibliometric mapping and topic modeling
+    year: '2025'
+  tiE0IDMAAAAJ:hSRAE-fF4OAC:
+    citations: 4
+    title: "MG-ASTN: Multigraph Framework With Attentive Spatial\u2013Temporal Networks for Crowd Mobility Prediction"
+    year: '2023'
+  tiE0IDMAAAAJ:hqOjcs7Dif8C:
+    citations: 3
+    title: 'Double free: Measurement-free localization for transceiver-free object'
+    year: '2014'
+  tiE0IDMAAAAJ:isU91gLudPYC:
+    citations: 0
+    title: 'MVDC: A Multi-view Dental Completion Model Based on Contrastive Learning'
+    year: '2025'
+  tiE0IDMAAAAJ:jSAVyFp_754C:
+    citations: 12
+    title: An empirical study of radio signal strength in sensor networks
+    year: '2006'
+  tiE0IDMAAAAJ:kJDgFkosVoMC:
+    citations: 6
+    title: 'TAPoseNet: Teeth Alignment Based on Pose Estimation via Multi-scale Graph Convolutional Network'
+    year: '2024'
+  tiE0IDMAAAAJ:k_7cPK9k7w8C:
+    citations: 0
+    title: Adaptive deployment optimization for a multi-layer surveillance network
+    year: '2014'
+  tiE0IDMAAAAJ:mVmsd5A6BfQC:
+    citations: 6
+    title: 'Handbutton: Gesture recognition of transceiver-free object by using wireless networks'
+    year: '2015'
+  tiE0IDMAAAAJ:nRpfm8aw39MC:
+    citations: 12
+    title: RSS-based ranging by leveraging frequency diversity to distinguish the multiple radio paths
+    year: '2016'
   tiE0IDMAAAAJ:qe6vwMD2xtsC:
-    citations: 
-    title: "Cross-Technology Localization: Leveraging Commodity WiFi to Localize Non-WiFi Device"
-    year: 2021
+    citations: 0
+    title: 'Cross-Technology Localization: Leveraging Commodity WiFi to Localize Non-WiFi Device'
+    year: '2021'
+  tiE0IDMAAAAJ:qjMakFHDy7sC:
+    citations: 29
+    title: An empirical study of radio signal strength in sensor networks using mica2 nodes
+    year: '2006'
+  tiE0IDMAAAAJ:qwy9JoKyICEC:
+    citations: 0
+    title: 'RF-Eye: Training-Free Object Shape Detection Using Directional RF Antenna'
+    year: '2022'
+  tiE0IDMAAAAJ:rbm3iO8VlycC:
+    citations: 6
+    title: 'PBE: Driver Behavior Assessment Beyond Trajectory Profiling'
+    year: '2018'
+  tiE0IDMAAAAJ:roLk4NBRz8UC:
+    citations: 8
+    title: On data partitioning in tree structure metric-space indexes
+    year: '2014'
+  tiE0IDMAAAAJ:sA9dB-pw3HoC:
+    citations: 10
+    title: 'Beyond RSS: A PRR and SNR aided localization system for transceiver-free target in sparse wireless networks'
+    year: '2021'
+  tiE0IDMAAAAJ:silx2ntsSuwC:
+    citations: 49
+    title: A low-cost smart glove system for real-time fitness coaching
+    year: '2020'
+  tiE0IDMAAAAJ:u-x6o8ySG0sC:
+    citations: 341
+    title: RFID-based localization and tracking technologies
+    year: '2011'
+  tiE0IDMAAAAJ:u5HHmVD_uO8C:
+    citations: 361
+    title: An RF-based system for tracking transceiver-free objects
+    year: '2007'
+  tiE0IDMAAAAJ:ufrVoPGSRksC:
+    citations: 2
+    title: A Versatile Nodal Energy Consumption Monitoring Method for Wireless Sensor Network Testbed
+    year: '2011'
+  tiE0IDMAAAAJ:v6i8RKmR8ToC:
+    citations: 2
+    title: 'FGRL-Net: Fine-Grained Personalized Patient Representation Learning for Clinical Risk Prediction Based on EHRs'
+    year: '2023'
+  tiE0IDMAAAAJ:wE-fMHVdjMkC:
+    citations: 3
+    title: 'scDTL: enhancing single-cell RNA-seq imputation through deep transfer learning with bulk cell information'
+    year: '2024'
+  tiE0IDMAAAAJ:zGdJYJv2LkUC:
+    citations: 1
+    title: 'Beyond RSS: A PRR aided RSS system to localize transceiver-free target in sparse wireless networks'
+    year: '2018'
+  tiE0IDMAAAAJ:zYLM7Y9cAGgC:
+    citations: 22
+    title: An energy-efficient k-hop clustering framework for wireless sensor networks
+    year: '2007'
+  tiE0IDMAAAAJ:zdjWy_NXXwUC:
+    citations: 0
+    title: 'AIMSafe: EEG-Based Driver Behavior Understanding via Attention and Incremental Learning Mechanisms'
+    year: '2023'
