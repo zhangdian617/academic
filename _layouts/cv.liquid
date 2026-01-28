@@ -1,6 +1,35 @@
 ---
 layout: default
 ---
+
+<style>
+    /* 1. 【容器扩宽】 */
+    /* 默认是 800px 左右，我们改到 1050px，
+       既不会像 1200px 那么散，又比默认的大气。
+       margin: auto 确保绝对居中。 */
+    @media (min-width: 992px) {
+        .container {
+            max-width: 1050px !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+    }
+
+
+    /* 3. 【标题微调】 */
+    /* 让卡片标题随之再大一点点，保持层级感 */
+    .card-title {
+        font-size: 1.4rem !important;
+        font-weight: 600 !important;
+    }
+    
+    /* 4. 【保持卡片质感】 */
+    /* 既然您满意原来的框，我们不动它的颜色，只确保它饱满 */
+    .card {
+        margin-bottom: 25px !important; /* 增加卡片间距 */
+    }
+</style>
+
 {% unless site.data.resume %}
   <div class="post">
 

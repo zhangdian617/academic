@@ -1,4 +1,7 @@
 <style>
+  /* ====================
+     时间轴样式 (Timeline Style)
+     ==================== */
   .awards-list {
     list-style: none;
     padding-left: 10px;
@@ -8,8 +11,7 @@
   .award-item {
     margin-bottom: 2rem;
     padding-left: 1.5rem;
-    /* 修改颜色：原本是 #3498db (蓝)，改为 #c9302c (深红) */
-    border-left: 2px solid #c9302c; 
+    border-left: 2px solid #c9302c; /* 深红轴线 */
     position: relative;
   }
 
@@ -18,22 +20,25 @@
     content: '';
     width: 12px;
     height: 12px;
-    /* 修改颜色：圆点背景也变成深红 */
-    background-color: #c9302c;
+    background-color: #c9302c; /* 红点 */
     border-radius: 50%;
     position: absolute;
     left: -7px;
     top: 0.2rem;
-    border: 2px solid #fff;
+    /* 关键修复：让边框颜色默认是白色(白底时)，后面会针对夜间模式改 */
+    border: 2px solid #fff; 
+    box-shadow: 0 0 0 2px #fff; /* 双重保险，增加间隔感 */
   }
 
+  /* 标题颜色 */
   .award-item-title {
-    color: #2c3e50;
+    color: #2c3e50; /* 白天：深蓝灰 */
     font-weight: bold;
     font-size: 1.05rem;
     margin-bottom: 0.3rem;
   }
 
+  /* 日期颜色 */
   .award-item-date {
     color: #7f8c8d;
     font-size: 0.85rem;
@@ -41,14 +46,35 @@
     font-style: italic;
   }
 
+  /* 内容颜色 */
   .award-item-content {
-    color: #444;
+    color: #444; /* 白天：深灰 */
     line-height: 1.6;
     font-size: 0.95rem;
   }
   
   .award-item-content p {
     margin: 0; 
+  }
+
+  /* ====================
+     🌙 夜间模式自动适配
+     ==================== */
+  html[data-theme="dark"] .award-item::before {
+    border-color: #1e1e1e !important; /* 让圆点的边框变成深色，模拟镂空 */
+    box-shadow: 0 0 0 2px #1e1e1e !important;
+  }
+  
+  html[data-theme="dark"] .award-item-title {
+    color: #ff6b6b !important; /* 夜间：标题变浅红，更醒目 */
+  }
+  
+  html[data-theme="dark"] .award-item-date {
+    color: #a0a0a0 !important; /* 夜间：日期变亮灰 */
+  }
+  
+  html[data-theme="dark"] .award-item-content {
+    color: #d0d0d0 !important; /* 夜间：内容变白 */
   }
 </style>
 
@@ -84,7 +110,7 @@
       {% endfor %}
     </div>
 
-    {% else %}
+  {% else %}
     <p>No news so far...</p>
   {% endif %}
 </div>

@@ -81,6 +81,21 @@ latest_posts:
         font-size: 0.9rem;
     }
 
+    /* 1. 题目加粗 */
+    .bibliography .title {
+        font-weight: bold !important;
+        color: #000 !important; /* 纯黑，更清晰 */
+    }
+
+    /* 2. 作者名字修正：去下划线 + 加粗 */
+    /* al-folio 用 em 标签包裹高亮作者，且默认有 text-decoration: underline */
+    .bibliography em {
+        font-style: normal !important;      /* 去掉斜体 */
+        font-weight: 900 !important;        /* 强制加粗 */
+        border-bottom: none !important;     /* 去掉下划线 */
+        color: #000 !important;             
+    }
+
     /* --- 个人信息文字优化 --- */
     .info-text p {
         margin-bottom: 6px;
@@ -132,14 +147,14 @@ latest_posts:
         
         <!-- 【修改点 2】Logo 放大 -->
         <!-- 改动：max-width 从 180px 改为 280px，更显眼 -->
-        <img src="{{ '/assets/img/LU_StdSignature_FullColour-01.jpg' | relative_url }}" 
+        <img src="{{ '/assets/img/LU.png' | relative_url }}" 
              class="university-logo" 
              alt="Lingnan University Logo" 
              style="float: right; max-width: 280px; height: auto; margin-left: 20px; margin-bottom: 10px;">
 
         <!-- 名字与职称 -->
         <h2 style="margin-top: 0; font-weight: bold; color: #333; font-family: 'Times New Roman', serif;">
-            Dian Zhang（张滇）
+            Dian Zhang (张滇)
         </h2>
         <p style="color: #111; margin-bottom: 10px; font-weight: 500;">
             <b>Associate Professor, Ph.D supervisor</b>

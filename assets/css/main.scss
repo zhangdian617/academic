@@ -1,5 +1,5 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+#  Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
 
@@ -25,12 +25,171 @@ $max-content-width: {{ site.max_width }};
   "tabler-icons/tabler-icons-outline.scss"
 ;
 
-/* --- 1. 导航栏居中  --- */
 
+
+/* (A) 导航栏整体容器：核心结构改造 */
+.navbar {
+    /* 1. 背景：使用纯白，不再透明，确保与背景隔离 */
+    background-color: #ffffff !important;
+
+    /* 2. 【关键设计】顶部岭南红装饰线：
+       这是融合岭南元素的点睛之笔，用一条鲜明的红线压住阵脚，
+       既显眼又能体现学术庄重感。 */
+    border-top: 4px solid #c9302c !important; 
+
+    /* 3. 底部：去掉之前的细线条，让阴影来负责边缘界定 */
+    border-bottom: none !important;
+
+    /* 4. 深度投影：
+       增加阴影的扩散半径（30px）和垂直距离（10px），
+       创造出强烈的“悬浮感”，彻底解决了和背景融为一体的问题。 */
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15) !important;
+
+    /* 5. 间距调整：稍微紧凑一点点，显得更精致 */
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    transition: all 0.3s ease;
+}
+
+/* (B) 左侧名字 (Brand)：保持经典学术风 */
+.navbar-brand {
+    font-family: 'Times New Roman', serif !important;
+    font-weight: 800 !important;
+    font-size: 1.5rem !important; /* 稍微再大一点点点，增加分量感 */
+    color: #222 !important;       /* 深炭黑，比纯黑更有质感 */
+    letter-spacing: 0.5px;
+}
+
+/* (C) 菜单项 (Links)：现代感的基底 */
+.navbar-nav .nav-item .nav-link {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+    font-weight: 700 !important;      /* 加粗 */
+    font-size: 1 rem !important;     /* 字号微调，更显精致 */
+    color: #555 !important;           /* 默认状态用中灰色，不抢戏 */
+    text-transform: uppercase;        /* 全大写 */
+    letter-spacing: 1.5px !important; /* 增加字间距，显得高级、透气 */
+    margin: 0 12px;                   /* 选项间距 */
+    padding-bottom: 5px !important;   /* 为下划线动画预留空间 */
+    position: relative;               /* 【重要】为伪元素定位做准备 */
+    transition: color 0.3s ease-in-out;
+}
+
+/* (D) 【高级交互设计】岭南红下划线跟随动画 */
+
+/* D1. 利用伪元素制作一条隐形的红线 */
+.navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;                 /* 初始状态宽度为0（隐藏） */
+    height: 2px;              /* 下划线高度 */
+    display: block;
+    margin-top: 5px;          /* 距离文字的距离 */
+    right: 0;                 /* 动画从右向左缩回时的基点 */
+    background: #c9302c;      /* 岭南红 */
+    transition: width 0.3s ease; /* 宽度变化的动画 */
+    -webkit-transition: width 0.3s ease;
+}
+
+/* D2. 鼠标悬停(Hover) & 选中状态(Active) 的效果 */
+/* 文字变红 */
+.navbar-nav .nav-item.active .nav-link,
+.navbar-nav .nav-item .nav-link:hover {
+    color: #c9302c !important; 
+}
+
+/* 红线滑出 */
+.navbar-nav .nav-item.active .nav-link::after,
+.navbar-nav .nav-item .nav-link:hover::after {
+    width: 100%; /* 宽度变为100%，显示红线 */
+    left: 0;     /* 动画从左向右滑出时的基点 */
+    background: #c9302c;
+}
+
+/* (E) 清理 al-folio 主题默认的背景样式 */
+.navbar-nav .nav-item.active .nav-link span {
+    background: none !important;
+    color: inherit !important;
+}
+
+/* (F) 布局保持：确保菜单居中 (沿用你之前的设置) */
+#navbar .container {
+    max-width: 1200px !important;
+}
 #navbar .navbar-nav {
-    margin: 0 auto !important;   
-    float: none !important;      
-    flex-direction: row;         
+    margin: 0 auto !important;
+    flex-direction: row;
     display: flex;
-    justify-content: center;     
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* =======================================================
+   4.0 夜间模式适配补丁 (Dark Mode Fixes - 增强版)
+   ======================================================= */
+
+/* 当处于夜间模式时... */
+html[data-theme="dark"] {
+
+    /* 1. 全局背景深色化 */
+    body {
+        background-color: #121212 !important;
+        color: #e0e0e0 !important; /* 兜底文字颜色 */
+    }
+
+    /* 2. 核心容器与卡片背景 */
+    body > .container, 
+    .card, 
+    .post-content { 
+        background-color: #1e1e1e !important; /* 深灰卡片色 */
+        color: #e0e0e0 !important;
+        box-shadow: none !important;
+        border-top: 5px solid #ff6b6b; /* 红条稍微亮一点 */
+    }
+
+    /* 3. 【关键修复】强制将所有段落、列表、新闻内容的文字变白 */
+    p, li, .news p, .news table td, .abstract, .caption {
+        color: #d0d0d0 !important; /* 稍微灰一点的白，看着不刺眼 */
+    }
+
+    /* 4. 修复 News 列表里的日期 (原本太暗) */
+    .news table th, .news .date {
+        color: #a0a0a0 !important;
+    }
+
+    /* 5. 修复导航栏 */
+    .navbar {
+        background-color: rgba(30, 30, 30, 0.95) !important;
+        border-bottom: 1px solid #333;
+    }
+    .navbar-brand { color: #fff !important; }
+    .navbar-nav .nav-item .nav-link { color: #bbb !important; }
+    .navbar-nav .nav-item.active .nav-link { color: #ff6b6b !important; }
+
+    /* 6. 标题颜色高亮 */
+    h1, h2, h3, h4, h5, .header, .zou-header {
+        color: #ff6b6b !important; /* 浅红色 */
+        border-bottom-color: #444 !important; /* 下划线也变暗 */
+    }
+
+    /* 7. 修复论文列表 (作者、期刊名) */
+    .bibliography .title { color: #fff !important; font-weight: bold; }
+    .bibliography .author { color: #d0d0d0 !important; }
+    .bibliography .periodical { color: #aaa !important; font-style: italic; }
+    .bibliography em { color: #fff !important; font-weight: bold;} /* 强调你的名字 */
+
+    /* 8. 修复链接颜色 (统一改为浅蓝) */
+    a, .info-text a, .navbar a, .news a {
+        color: #64b5f6 !important; 
+    }
+    a:hover {
+        color: #90caf9 !important; /* hover 时更亮 */
+        text-decoration: underline;
+    }
+    
+    /* 保持导航栏 Hover 还是红色 */
+    .navbar-nav .nav-item .nav-link:hover {
+        color: #ff6b6b !important;
+    }
+    
 }
