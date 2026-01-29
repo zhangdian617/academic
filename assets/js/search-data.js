@@ -476,6 +476,16 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/academic/projects/9_project/";
+            },},{id: "projects-calmwave-stress-management-via-ai-music",
+          title: 'CalmWave - Stress Management via AI Music',
+          description: "A physiology-based music generation system that creates personalized music for stress relief.",
+          section: "Projects",handler: () => {
+              window.location.href = "/academic/projects/calmwave/";
+            },},{id: "projects-ai-driven-digital-dentistry",
+          title: 'AI-Driven Digital Dentistry',
+          description: "Next-Gen AI Framework for 3D Reconstruction, Orthodontics, and Chairside Manufacturing.",
+          section: "Projects",handler: () => {
+              window.location.href = "/academic/projects/smart_dentistry/";
             },},{id: "teachings-data-science-fundamentals",
           title: 'Data Science Fundamentals',
           description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
